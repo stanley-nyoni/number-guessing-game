@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Guess My Number</title>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="header">
+            <h1>Number Guessing Game</h1>
+            <p>Try and Guess a random number between 1 and 20</p>
+            <p>You have 8 attempts to guess the number correct</p>
+        </div>
+        <div class="game-section">
+            <div class="game-on">
+                <h2>Guess a number</h2>
+                <div class="input-box">
+                    <input type="text" autofocus placeholder="1-20" id="input-number">
+                    <button class="btn submit-btn">Submit</button>
+                </div>
+                <div class="guess-stats">
+                    <p >Previous Guesses: <span class="previous-guesses"></span> </p>
+                    <p >Remaining Guesses: <span class="remaining-guesses"></span></p>
+                </div>
+                <div class="guess-comment">Enter a valid number!</div>
+            </div>
+
+            <div class="game-over">
+                <h2>Game Over!</h2>
+                <p class="compliment">Congratulations!</p>
+                <h3 class="result">You Guessed Correctly</h3>
+                <button class="btn restart-btn">Restart</button>
+            </div>
+              <p class="copyright"> &copy Stanley M Nyoni</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
